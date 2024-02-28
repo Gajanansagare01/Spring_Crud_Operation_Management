@@ -1,13 +1,10 @@
 # Spring_Crud_Operation_Management
-In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Maven that use Spring Data JPA to interact with H2 database. You'll know:
+In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Maven that use Spring Data JPA to interact with H2 database.
 
 This is a simple Project Management System built using Java 17 and Spring Boot, with an in-memory database (H2) for data persistence. The system allows users to perform CRUD operations on project information via RESTful API endpoints.
 
-## Table of Contents:
+## Model Creation
 
-- Project Setup
-- Database Configuration
-- Model Creation
 1. Repository Layer
 2. Service Layer
 3. Controller Layer
@@ -19,34 +16,43 @@ This is a simple Project Management System built using Java 17 and Spring Boot, 
 
 ## Database Configuration
 
+
 Configure the H2 in-memory database in application.properties.
 
-Define the schema for the 'Project' entity (attributes: id, name, description, startDate, endDate, etc.).
+Define the schema for the 'Project' entity (attributes: id, Book_name , Author, Price of BOok etc.).
 
  ## Model Creation
 
-Create a Project model class in the models package with annotations for JPA entity.
+Created a Project model class in the models package with annotations for JPA entity.
 
 ## Repository Layer
 
-Create a ProjectRepository interface extending JpaRepository to handle data operations.
+Created a ProjectRepository interface extending JpaRepository to handle data operations.
 
 ## Service Layer
-Implement a ProjectService class to handle business logic.
+
+Implemented a ProjectService class to handle business logic.
 Define methods for create, read, update, and delete operations.
 
 ## Controller Layer
 
-Develop a ProjectController class to handle HTTP requests.
-Map CRUD operations to RESTful endpoints (e.g., POST /projects, GET /projects/{id}, etc.)
+Developd a ProjectController class to handle HTTP requests.
+Map CRUD operations to RESTful endpoints (e.g., POST /projects, GET /Book/{id}, etc.)
 
 ## CRUD Operations
   
-Create: Implement an endpoint to add a new project.
+Create: Implement an endpoint to add a new Book.
 
-Read: Implement endpoints to retrieve all projects and a single project by ID.
+Read: Implement endpoints to retrieve all Books and a single Book by ID.
 
-Update: Implement an endpoint to update an existing project.
+Update: Implement an endpoint to update an existing Book.
 
-Delete: Implement an endpoint to delete a project by ID.
+Delete: Implement an endpoint to delete a Book by ID.
+## Outpus:
+
+![Books_3_sprongboot](https://github.com/Gajanansagare01/Spring_Crud_Operation_Management/assets/121687841/81e71167-22f7-4cb9-aca6-56da2a423ff5)
+
+
+![Book_2_sprongboot](https://github.com/Gajanansagare01/Spring_Crud_Operation_Management/assets/121687841/bcb76650-45c6-48d4-a182-ab7060906475)
+
 
